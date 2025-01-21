@@ -1,0 +1,40 @@
+Step 1: Create a README File
+On your local computer, create a file named README.md (or README.txt if you don’t want Markdown formatting).
+Add content to your README file. For example:
+
+ # My Static Website
+This is a simple static website hosted locally using Apache/Nginx.
+
+## Features
+- Hosted locally.
+- Basic HTML structure.
+
+## Usage
+Open the browser and navigate to `http://localhost`.
+
+## Author
+Your Name
+
+Step 2: Initialize a Git Repository (if not done already)
+Open a terminal in the directory where your website files (e.g., index.html) are stored.
+Run the following commands:
+ git init
+git add .
+git commit -m "Initial commit"
+
+Step 3: Create a GitHub Repository
+Log in to your GitHub account.
+Click the + icon (top-right corner) and select New Repository.
+Fill in the repository name (e.g., static-website) and click Create repository.
+Step 4: Link the Local Repository to GitHub
+Copy the remote URL of your GitHub repository (e.g., https://github.com/username/static-website.git).
+Add the remote URL to your local repository:
+
+git remote add origin https://github.com/username/static-website.git
+
+git branch -M main
+git push -u origin main
+
+Step 5: Verify the README on GitHub
+Go to your GitHub repository page.
+You should see the README.md content displayed on the repository's main page.
