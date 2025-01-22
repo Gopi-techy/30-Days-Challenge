@@ -1,1 +1,13 @@
+@echo off
+:: Define source and destination directories
+set SOURCE_DIR=C:\path\to\source
+set DEST_DIR=C:\path\to\destination
 
+:: Create the destination directory if it doesn't exist
+if not exist "%DEST_DIR%" mkdir "%DEST_DIR%"
+
+:: Copy files
+xcopy "%SOURCE_DIR%" "%DEST_DIR%" /E /I
+
+echo Files have been copied successfully!
+pause
